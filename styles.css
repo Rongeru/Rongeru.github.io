@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 50vh;
+    margin-top: -14vh;
+    margin-bottom: -17vh;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 8px;
+    margin-right: -8px;
+    padding-left: 7vh;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #7F00FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 5%;
+    margin-left: 75px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    font-weight: bolder;
+    filter: drop-shadow(2px 2px 0 #000);
+}
+
+.header-text h1 span {
+   color: #7F00FF;
+}
+
+/* about me */
+.row {
+    display: flex;
+    justify-content: start;
+}
+
+.row-center {
+    justify-content: center;
+    width: 100%;
+}
+
+.row-over-header {
+    margin-top: -4vh;
+    position: relative;
+
+}
+
+.resume {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    flex-basis: 35%;
+}
+
+
+.about-col-2 {
+    position: absolute;
+    z-index: 1;
+    word-break: break-all;
+    display: block;
+    text-align: center;
+    margin-left: 25vh;
+    margin-right: 25vh;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#about {
+    width: calc(100% - 12vh);
+    margin-left: 6vh;
+    /* background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px); */
+    margin-top: 80px;
+    color:#fff;
+}
+/* Buttons */
+.resume{
+    padding: 10px;
+    padding-top: 50px;
+    position: absolute;
+}
+
+.resume p{
+     font-size: 30px;
+     font-weight: bolder;
+     padding-bottom: 10px;
+     padding-left: 15px;
+     text-decoration: underline;
+     
+}
+
+.resume a{
+    display: block;
+    background: #7F00FF;
+    padding: 15px 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    filter: drop-shadow(2px 2px 0 #000);
+    justify-content: space-evenly;
+}
+
+#LinkedIn{
+    margin-top: 10px;
+
+}
+
+.resume a:hover{
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: underline;
+    filter: grayscale();
+}
