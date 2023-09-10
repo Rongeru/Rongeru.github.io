@@ -15,7 +15,7 @@
                     <img src="images/Ranger-logos_white.png" class="logo">
                     <ul>
                         <li><a href="#about-me">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -25,7 +25,10 @@
                 </div>
             </div>
         </div>
+
+
             <!--About Me-->
+            
         <div id="about">
             <div class="container">
                 <div class="row row-center">
@@ -48,14 +51,59 @@
                         <h1 class="sub-title">About Me</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi leo urna molestie at. Eget felis eget nunc lobortis mattis aliquam. Massa enim nec dui nunc mattis. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Vulputate enim nulla aliquet porttitor. Eros donec ac odio tempor orci dapibus ultrices. Massa vitae tortor condimentum lacinia quis vel. Nisi quis eleifend quam adipiscing. Enim diam vulputate ut pharetra sit amet.</p>
                         <div class="tab-titles">
-                            <p class="tab-links">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- SKILL -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                <li><span>Web Development</span><br>Using HTML to create web pages</li>
+                                <li><span>General Work</span><br>Working in high stress/pressure enviroments</li>
+                            </ul>
+                        </div>
+                        <!-- EXPERIENCE -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Personal Projects, like this website</li>
+                                <li><span>2021-2022</span><br>IT Assistant at a charity</li>
+                            </ul>
+                        </div>
+                        <!-- EDUCATION -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Responsive Web Design Certification - freeCodeCamp</li>
+                                <li><span>2017 - 2019</span><br>BTEC IT and Software Level 3 - Cardiff and Vale College</li>
+                                <li><span>2021-2023</span><br>Azure Domain/Networking Course - Microsoft </li>
+                            </ul>
                         </div>
                     </div> 
                 </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title-2">Portfolio</h1>
+        </div> -->
+    </div>
+    <!-- Scripts for tab links #about-me -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
     </body>
 </html>
