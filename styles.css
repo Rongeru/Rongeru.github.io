@@ -89,7 +89,7 @@ nav ul li a:hover::after {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: stretch;
-    grid-template-columns: 30% 50% 30%;
+    grid-template-columns: 25% 50% 25%;
 }
 
 .row-center {
@@ -99,9 +99,7 @@ nav ul li a:hover::after {
 .row-over-header {
     margin-top: -4vh;
     position: relative;
-
 }
-
 
 
 .about-col-2 {
@@ -122,12 +120,13 @@ nav ul li a:hover::after {
     width: 100%;
     padding-left: 6vh;
     padding-right: 6vh;
-    margin-left: 80px 0 0;
+    margin: 80px 0 0;
     color:#fff;
 }
 /* Buttons */
 .resume{
     width: 15em;
+    justify-self: center;
 }
 
 .resume p{
@@ -136,7 +135,8 @@ nav ul li a:hover::after {
      padding-bottom: 10px;
      padding-left: 15px;
      text-decoration: underline;
-     
+     color: #fff;
+     filter: drop-shadow(2px 2px #000);
 }
 
 .resume a{
