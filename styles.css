@@ -26,6 +26,7 @@ body{
 
 .container{
     padding: 10px 0%;
+    height: auto;
 }
 
 nav{
@@ -66,7 +67,6 @@ nav ul li a:hover::after {
 
 .header-text {
     margin-top: 5%;
-    margin-left: 75px;
     font-size: 30px;
     text-align: center;
     padding-top: 100px;
@@ -85,8 +85,11 @@ nav ul li a:hover::after {
 
 /* about me */
 .row {
-    display: flex;
+    display: grid;
     justify-content: start;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    grid-template-columns: 30% 50% 30%;
 }
 
 .row-center {
@@ -100,21 +103,18 @@ nav ul li a:hover::after {
 }
 
 .resume {
-    position: absolute;
-    left: 0;
     z-index: 0;
     flex-basis: 35%;
 }
 
 
 .about-col-2 {
-    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: 2;
     z-index: 1;
     word-break: break-all;
     display: block;
     text-align: center;
-    margin-left: 25vh;
-    margin-right: 20vh;
 }
 
 .sub-title{
