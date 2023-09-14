@@ -155,7 +155,6 @@ nav ul li a:hover::after {
 
 #LinkedIn{
     margin-top: 10px;
-
 }
 
 .resume a:hover{
@@ -215,3 +214,10 @@ nav ul li a:hover::after {
 }
 
 /* Portfolio */
+#portfolio{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    z-index: 1;
+    display: block;
+    text-align: center;
+}
