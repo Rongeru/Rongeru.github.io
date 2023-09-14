@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -123,6 +122,10 @@ nav ul li a:hover::after {
     margin: 80px 0 0;
     color:#fff;
 }
+
+#about h1{
+    text-decoration: underline;
+}
 /* Buttons */
 .resume{
     width: 15em;
@@ -220,4 +223,42 @@ nav ul li a:hover::after {
     z-index: 1;
     display: block;
     text-align: center;
+}
+
+#portfolio h1{
+    text-decoration: underline;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap:;
+    margin-top: 20px;
+}
+.work{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-1{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px 15vh;
+}
+
+.work-1 img{
+    width: auto;
+    border-radius: 10px;
+
+}
+
+.work img{
+    width: auto;
+    border-radius: 10px;
+    
+}
+.layer{
+    padding: 0 ;
 }
