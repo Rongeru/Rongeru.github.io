@@ -100,7 +100,6 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-
 .about-col-2 {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -232,7 +231,6 @@ nav ul li a:hover::after {
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    grid-gap:;
     margin-top: 20px;
 }
 .work{
@@ -260,5 +258,5 @@ nav ul li a:hover::after {
     
 }
 .layer{
-    padding: 0 ;
+    padding: 0;
 }
