@@ -255,5 +255,20 @@ nav ul li a:hover::after {
     
 }
 .layer{
-    padding: 0;
+    width: 85%;
+    height: fit-content;
+    border-radius: 10px;
+    color: #080808;
+    background: linear-gradient(rgba(0,0,0,0.5), #BE7FFF);
+    margin: 5px 20px 20px;
+    position: absolute;
+    top: 50px;
+    bottom: 50vh;
+    left: 26px;
+    overflow: hidden;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
