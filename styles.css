@@ -6,8 +6,17 @@
 body{
     color: #fff;
     background-size: cover;
-    background: #080808 url(images/background.jpg);
-    center;
+    background-image:  url(images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+/*icons*/
+
+#icon{
+    color: dark;
+    padding: 2px 5px;
 }
 
 #header{
@@ -112,6 +121,12 @@ nav ul li a:hover::after {
     font-weight: bolder;
 }
 
+.sub-title-2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 #about {
     width: 100%;
     padding-left: 6vh;
@@ -124,6 +139,12 @@ nav ul li a:hover::after {
     text-decoration: underline;
     color: #7F00F;
 }
+
+/*.about-me-section{*/
+/*    overflow: visible;*/
+/*    padding: 20px 10px 60px 20px;*/
+/*}*/
+
 /* Buttons */
 .resume{
     width: 15em;
@@ -133,7 +154,7 @@ nav ul li a:hover::after {
 .resume p{
      font-size: 30px;
      font-weight: bolder;
-     padding-bottom: 10px;
+     padding-bottom: 5px;
      padding-left: 15px;
      text-decoration: underline;
      color: #fff;
