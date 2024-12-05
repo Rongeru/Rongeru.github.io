@@ -95,6 +95,7 @@ nav ul li a:hover::after {
     flex-wrap: nowrap;
     align-items: stretch;
     grid-template-columns: 25% 50% 25%;
+    padding-left: 10px;
 }
 
 .row-center {
@@ -136,7 +137,7 @@ nav ul li a:hover::after {
 
 #about h1{
     text-decoration: underline;
-    color: #7F00F;
+    color: #7f00ff;
 }
 
 /*.about-me-section{*/
